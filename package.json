@@ -1,0 +1,23 @@
+{
+  "name": "hw-wk13-cu-09-2020",
+  "version": "1.0.0",
+  "description": "# Unit 20 React Homework: React Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkaltenheuser/react-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kkaltenheuser/react-portfolio/issues"
+  },
+  "homepage": "https://github.com/kkaltenheuser/react-portfolio#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "react-bootstrap": "^1.4.0"
+  }
+}
