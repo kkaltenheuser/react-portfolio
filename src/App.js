@@ -1,27 +1,27 @@
-import { BrowserRouter as Router, Route } from "react-router-dom"
+import React from 'react';
+
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+import Header from "../src/components/header/index";
+import Footer from "../src/components/footer/index";
+import Index from "./pages/index";
+import Portfolio from "./pages/portfolio";
+import Contact from "./pages/contact";
+import Socials from "./pages/socials";
 
 import './App.css';
-import "bootstrap/dist/css/bootstrap.min.css"
-
-import Home from "./components/pages/home"
-import Portfolio from "./components/pages/portfolio"
-import Contact from "./components/pages/contact"
-import Navbar from "./components/header"
-import Footer from "./components/footer"
 
 function App() {
-  
   return (
     <Router>
-
-      <div>
-        <Navbar />
-        <Route exact path="/src/components/pages/home.js" component = { Home } />
-        <Route exact path="/src/components/pages/portfolio.js" component = { Portfolio } />
-        <Route exact path="/src/components/pages/contact.js" component=  { Contact } /> 
-        <Footer />
-      </div>
-
+      <Header />
+      <Route exact path="/" component={Index} />
+      <Route exact path="/index" component={Index} />
+      <Route exact path="/react-portfolio" component={Index} />
+      <Route exact path="/portfolio" component={Portfolio} />
+      <Route exact path="/contact" component={Contact} />
+      <Route exact path="/socials" component={Socials} />
+      <Footer/>
     </Router>
   );
 }
