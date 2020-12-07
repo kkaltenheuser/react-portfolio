@@ -53,3 +53,72 @@ const Projects = () => {
         website: "https://kkaltenheuser.github.io/Work-Day-Scheduler/"
       },
     ]
+    // display information from above
+    return (
+        <main className="container" id="main">
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <h1><center>Portfolio</center></h1>
+              </div>
+            </div>
+            <div className="row">
+              <center>
+                <Project
+                  name={projects[0].name}
+                  src={projects[0].src}
+                  description={projects[0].description}
+                  repo={projects[0].repo}
+                  website={projects[0].website} 
+                />
+                <Project
+                  name={projects[1].name}
+                  src={projects[1].src}
+                  description={projects[1].description}
+                  repo={projects[1].repo}
+                  website={projects[1].website} 
+                />
+              </center>
+            </div>
+            <div className="row">
+              <center>
+                <Project
+                  name={projects[2].name}
+                  src={projects[2].src}
+                  description={projects[2].description}
+                  repo={projects[2].repo}
+                  website={projects[2].website} 
+                />
+                <Project
+                  name={projects[3].name}
+                  src={projects[3].src}
+                  description={projects[3].description}
+                  repo={projects[3].repo}
+                  website={projects[3].website} 
+                />
+              </center>
+            </div>
+            <div className="row">
+              <center>
+                <Project
+                  name={projects[4].name}
+                  src={projects[4].src}
+                  description={projects[4].description}
+                  repo={projects[4].repo}
+                  website={projects[4].website} 
+                />
+                <Project
+                  name={projects[5].name}
+                  src={projects[5].src}
+                  description={projects[5].description}
+                  repo={projects[5].repo}
+                  website={projects[5].website} 
+                />
+              </center>
+            </div>
+          </div>
+        </main>
+      )
+    }
+    
+    export default Projects
