@@ -15,6 +15,11 @@ const Contact = () => {
           </div>
           <br/>
           <div className="form-group">
+            <label for="prnns">Pronouns:</label>
+            <input type="text" className="form-control" id="prnns"/>
+          </div>
+          <br/>
+          <div className="form-group">
             <label for="email">Email:</label>
             <input type="email" className="form-control" id="email"/>
           </div>
