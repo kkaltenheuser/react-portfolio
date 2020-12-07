@@ -1,0 +1,6 @@
+  /* project display at 50% to flex for mobile */
+  
+  .panel-body {
+    width: 50%;
+    height: 50%;
+  }
