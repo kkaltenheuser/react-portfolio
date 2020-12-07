@@ -1,32 +1,43 @@
-import React from "react"
-
-function Project({ title, deployedLink, imageSource, description, technologiesUtilized, repoLink }) {
-
+import React, { Component } from 'react';
+import "./style.css"
+// import custom css for flex-box
+class Project extends Component {
+  render() {
     return (
-        <div class="card col-10 col-xl-4 mb-4">
-            <h3 class="card-title">{title}</h3>
+      <div className="col-md-6">
+        <div className="panel panel-default">
+          <div className="panel-heading text-center panel-relative">
+            <strong>{this.props.name}</strong>
+          </div>
+          <div className="panel-body text-center panel-relative">
+            <img 
+              className="img-responsive center-block"
+              src={this.props.src}
+              alt={this.props.name}
+            ></img>
+
+            <p className="panel-text">
+              {this.props.description}
+            </p>
+
             <a
-                target="_blank"
-                href={deployedLink}
-                ><img
-                class="card-img-top"
-                src={imageSource}
-                alt="Card caption"
-            /></a>
-            <div class="card-body">
-                <p class="card-text">
-                    {description}
-                </p>
-    <p class="card-text"><b>Technologies Utilized: </b>{technologiesUtilized}</p>
-                <a
-                href={repoLink}
-                class="btn btn-primary"
-                target="_blank"
-                >Github Repo</a
-                >
-            </div>
+              href={this.props.repo}
+              className="btn btn-secondary"
+            >
+              Visit Repo
+            </a>
+
+            <a
+              href={this.props.website}
+              className="btn btn-secondary"
+            >
+              Visit Website
+            </a>
+          </div>
         </div>
+      </div>
     )
-}
+  }
+};
 
 export default Project
