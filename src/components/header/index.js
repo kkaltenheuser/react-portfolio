@@ -27,14 +27,14 @@ const Header = () => {
             <ul className="nav navbar-nav">
               <li className="active">
                 <a href="/portfolio"
-                  >Portfolio <span className="sr-only">(current)</span></a
+                  >My Work <span className="sr-only">(current)</span></a
                 >
               </li>
               <li>
-                <a href="/contact">Contact</a>
+                <a href="/contact">Say Hello!</a>
               </li>
               <li>
-                <a href="/socials">Socials</a>
+                <a href="/socials">Let's Connect on Socials</a>
               </li>  
             </ul>
           </div>
