@@ -1,65 +1,35 @@
-import React from "react"
+import React from 'react';
+import "../App.css"
 
-function Contact() {
-     
-    return (
-        <main class="row">
-            <div class="container col-12 m-0 ml-4 mt-4">
-                <div class="row">
-                    <div class="col-1"></div>
-                    <div class="row col-10">
-                        <h1>Contact Me</h1>
-                        <form class="mt-4 pt-4" >
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input
-                                type="email"
-                                class="form-control"
-                                id="name"
-                                />
-                            </div>
-                            <form class="mt-4 pt-4" >
-                            <div class="form-group">
-                                <label for="pronouns"> Pronouns </label>
-                                <input
-                                type="text"
-                                class="form-control"
-                                id="name"
-                                />
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email address</label>
-                                <input
-                                type="email"
-                                class="form-control"
-                                id="email"
-                                placeholder="yourname@example.com"
-                                />
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Say Howdy!</label>
-                                <textarea
-                                class="form-control"
-                                id="exampleFormControlTextarea1"
-                                rows="3"
-                                ></textarea>
-                            </div>
-                            <button type="submit">Submit</button>
-                        </form>
-                        <br /><br />
-                        <p>
-                        <i class="fas fa-phone"></i> +1 515.451.1057
-                        </p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <p>
-                        <i class="fas fa-envelope-square"></i> karenkaltenheuser@gmail.com
-                        </p>
-                    </div>
-                    <div class="col-1"></div>
-                </div>
-            </div>
-        </main>
-    )
+const Contact = () => {
+  return (
+    <div className="container">
+      <div className="content">
+        <h1 className="text-center">Contact</h1>
+      </div>
+      <div className="below">
+        <form>
+          <div className="form-group">
+            <label for="usr">Name:</label>
+            <input type="text" className="form-control" id="usr"/>
+          </div>
+          <br/>
+          <div className="form-group">
+            <label for="email">Email:</label>
+            <input type="email" className="form-control" id="email"/>
+          </div>
+          <br/>
+          <div className="form-group">
+            <label for="comment">Message:</label>
+            <textarea className="form-control" rows="5" id="comment"/>
+          </div>
+          <br/>
+          <br/>
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  )
 }
 
 export default Contact
