@@ -1,8 +1,8 @@
 import React from 'react';
 import SocialPanel from "../components/SocialPanel/index.js";
-import GitHub from "../images/GitHub.png";
-import Instagram from "../images/Instagram.png";
-import LinkedIn from "../images/LinkedIn.png"
+import GitHub from "../images/GitHub.jpg";
+import Instagram from "../images/Instagram.jpg";
+import LinkedIn from "../images/LinkedIn.jpg"
 
 // create state
 const SocialPanels = () => {
@@ -29,7 +29,7 @@ const SocialPanels = () => {
       <div className="container">
         <div className="row">
           <div className="col">
-            <h1><center>Socials</center></h1>
+            <h1><center>Let's Connect!</center></h1>
           </div>
         </div>
         <div className="row">
