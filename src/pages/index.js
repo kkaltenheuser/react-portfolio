@@ -1,48 +1,45 @@
-import React from "react";
-import headshot from ""
+import React from 'react';
+import ProfilePhoto from "../images/ProfilePhoto.jpg"
+import "../App.css";
 
-function homePage() {
+const Index = () => {
+  return (
+    <div className="container">
+      <div 
+        className="jumbotron text-center" 
+        // style="margin-bottom: 0"
+      >
+        <h1 className="text-center text-uppercase">Ren Kaltenheuser</h1>
+        <p className="text-center font-italic">Hey, Hi, Hello!</p>
+      </div>
 
-    return (
-        <main class="container-fluid">
-        <div class="row m-0 mt-4">
+      <div 
+        className="container" 
+        // style="margin-top: 30px"
+      >
+        <div className="row">
+          <div className="col-sm-4">
+            <img
+              className="center-block"
+              src={ProfilePhoto}
+              width="200"
+              height="200"
+              alt="Ren surrounded by illustrative details."
+            />
 
-            <div class="col-sm-1"></div>
-
-            <div class="col-sm-10">
-            <div class="row">
-                <div class="col-2 col-sm-1"></div>
-                <div class="col-10 col-sm-6 col-md-5">
-                <img
-                    src={headshot}
-                    alt="headshot"
-                    width="200px"
-                />
-                </div>
-                <div class="col-3 col-sm-1"></div>
-                <div id="title" class="col-9 col-sm-4 col-md-5" >
-                    <div class="row">
-                        <h1>About</h1>
-                    </div>
-                    <div class="row">
-                        <h1>Hi, Hello, Howdy!</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4 pt-4">
-                <p>
-                Upon graduating in May 2016, Karen "Ren" Kaltenheuser began travelling and consulting globally for a number of established brands, non-profits and NGO's. They have done work in art direction, branding, design, illustration. Currently, they are pursuing a Web Development Intensive at Columbia University while residing in NYC. 
-                </p>
-                <p>
-                They are currently seeking a career in front-end web development where they seek to combine their academic interests and creative pursuits through the unification of technology.
-                </p>
-            </div>
-            </div>
-
-            <div class="col-sm-1"></div>
+            <hr className="d-sm-none" />
+          </div>
+          <div className="col-sm-8">
+            <h2 className="text-center">About Me</h2>
+            <p>
+            Upon graduating in May 2016, Karen "Ren" Kaltenheuser began travelling and consulting globally for a number of established brands, non-profits and NGO's. They have done work in art direction, branding, design, illustration. Currently, they are wrapping up a Web Development Intensive at Columbia University while residing in NYC. Through attending Columbia, they have fulfilled their mission to pivot their career to that of one in  front-end web development where they seek to combine their academic interests and creative pursuits through the unification of technology.
+            </p>
+            <br />
+          </div>
         </div>
-        </main>
-    )
+      </div>
+    </div>
+  )
 }
 
-export default homePage
+export default Index
