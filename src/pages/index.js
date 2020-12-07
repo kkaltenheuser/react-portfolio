@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfilePhoto from "../images/ProfilePhoto.jpg"
+import ProfilePhoto from "../images/ProfilePicture.png"
 import "../App.css";
 
 const Index = () => {
